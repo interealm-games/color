@@ -45,6 +45,15 @@
 		}],
 		"command": "haxelib",
 		"arguments": ["install", "utest"]
+	}, {
+		"name": "init:haxe:exception",
+		"description": "Installs exception",
+		"groups": [{
+			"name": "init:haxe",
+			"rank": 1
+		}],
+		"command": "haxelib",
+		"arguments": ["install", "exception", "1.1.0"]
 	},
 
 	{
