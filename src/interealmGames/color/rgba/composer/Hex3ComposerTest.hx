@@ -1,6 +1,5 @@
 package interealmGames.color.rgba.composer;
 
-
 import utest.Assert;
 import utest.Async;
 import interealmGames.common.math.Rounding;
