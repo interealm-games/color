@@ -65,5 +65,20 @@
 		}],
 		"command": "git",
 		"arguments": ["submodule", "update", "--remote"]
+	},
+	
+	
+	{
+		"name": "test",
+		"description": "Runs all tests for the library",
+		"command": "haxe",
+		"arguments": [
+			"-lib", "utest",
+			"-lib", "exception",
+			"-cp", "src",
+			"-cp", "common/src",
+			"--interp",
+			"--main", "interealmGames.color.Test"
+		]
 	}]
 }
