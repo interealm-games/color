@@ -9,7 +9,7 @@ import interealmGames.color.rgba.composer.RgbComposer;
 class RgbComposerTest extends utest.Test {
 	var composer = new RgbComposer();
 
-	function testCollapseComposition() {
+	function testBasicComposition() {
 		var color = new Color(136, 170, 17, 1);
 		Assert.equals(
 			"rgb(136, 170, 17)",
