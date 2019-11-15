@@ -42,7 +42,7 @@ class ColorTest extends utest.Test {
 				var color = new Color(0, 0, 0, 1);
 				color.alpha = value;
 				color.validate();
-			}, InvalidValueException);
+			}, InvalidAlphaException);
 		}
 	}
 

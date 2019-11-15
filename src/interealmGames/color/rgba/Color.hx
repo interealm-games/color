@@ -15,22 +15,23 @@ class Color extends ColorBase {
 		this.green = g;
 		this.blue = b;
 		this.alpha = a;
+		this.validate();
 	}
 
 	public function validate(): Void {
-		if(this.isValidValue(this.red)) {
+		if(!this.isValidValue(this.red)) {
 			throw new InvalidValueException('red', this.red);
 		}
 
-		if(this.isValidValue(this.green)) {
+		if(!this.isValidValue(this.green)) {
 			throw new InvalidValueException('green', this.green);
 		}
 
-		if(this.isValidValue(this.blue)) {
+		if(!this.isValidValue(this.blue)) {
 			throw new InvalidValueException('blue', this.blue);
 		}
 
-		if(this.isValidAlpha(this.alpha)) {
+		if(!this.isValidAlpha(this.alpha)) {
 			throw new InvalidAlphaException(this.alpha);
 		}
 	}
