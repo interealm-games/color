@@ -16,6 +16,7 @@ class RgbaParser implements Parser<Color> {
 	public function parse(colorString:String):Color {
 		colorString = 
 			colorString
+				.replace('rgba', '')
 				.replace('rgb', '')
 				.replace('(', '')
 				.replace(')', '')

@@ -41,4 +41,3 @@ class ColorTest extends utest.Test {
 		}
 	}
 }
-

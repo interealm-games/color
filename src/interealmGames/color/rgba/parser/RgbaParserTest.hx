@@ -28,9 +28,9 @@ class RgbaParserTest extends utest.Test {
 	}
 
 	function testParse() {
-		this._test("rgb(31,133,222,1)", new Color(31, 133, 222, 1));
-		this._test("rgb(31, 133,222,0.1)", new Color(31, 133, 222, 0.1));
-		this._test("rgb(31, 133, 222, 0.05)", new Color(31, 133, 222, 0.05));
+		this._test("rgba(31,133,222,1)", new Color(31, 133, 222, 1));
+		this._test("rgba(31, 133,222,0.1)", new Color(31, 133, 222, 0.1));
+		this._test("rgba(31, 133, 222, 0.05)", new Color(31, 133, 222, 0.05));
 		this._test("(31,133,222, .5)", new Color(31, 133, 222, 0.5));
 		this._test("31, 133, 222, .65", new Color(31, 133, 222, 0.65));
 	}
