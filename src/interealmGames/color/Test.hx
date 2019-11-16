@@ -10,6 +10,7 @@ import interealmGames.color.rgba.composer.Hex8ComposerTest;
 import interealmGames.color.rgba.composer.RgbComposerTest;
 import interealmGames.color.rgba.composer.RgbaComposerTest;
 import interealmGames.color.rgba.parser.Hex3ParserTest;
+import interealmGames.color.rgba.parser.Hex6ParserTest;
 
 class Test {
 	public static function main() {
@@ -22,6 +23,7 @@ class Test {
 		runner.addCase(new RgbComposerTest());
 		runner.addCase(new RgbaComposerTest());
 		runner.addCase(new Hex3ParserTest());
+		runner.addCase(new Hex6ParserTest());
 		Report.create(runner);
 		runner.run();
 	}
