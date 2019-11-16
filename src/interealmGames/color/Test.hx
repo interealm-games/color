@@ -2,6 +2,7 @@ package interealmGames.color;
 
 import utest.Runner;
 import utest.ui.Report;
+import interealmGames.color.FormatIdentifierTest;
 import interealmGames.color.rgba.ColorTest;
 import interealmGames.color.rgba.composer.HexComposerTest;
 import interealmGames.color.rgba.composer.Hex3ComposerTest;
@@ -18,6 +19,7 @@ import interealmGames.color.rgba.parser.RgbaParserTest;
 class Test {
 	public static function main() {
 		var runner = new Runner();
+		runner.addCase(new FormatIdentifierTest());
 		runner.addCase(new ColorTest());
 		runner.addCase(new HexComposerTest());
 		runner.addCase(new Hex3ComposerTest());
