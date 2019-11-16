@@ -7,11 +7,6 @@ class ColorTest extends utest.Test {
 	var invalid256:Array<Int> = [-1, 256, 3000];
 	var invalidAlpha:Array<Float> = [-0.1, 1.00001]; 
 
-//   //synchronous setup
-//   public function setup() {
-//	 field = "some";
-//   }
-
 	function testValidation() {
 		for(value in this.invalid256) {
 			// Test invalid red
@@ -45,10 +40,5 @@ class ColorTest extends utest.Test {
 			}, InvalidAlphaException);
 		}
 	}
-
-//   function specField() {
-//	 field.charAt(0) == 's';
-//	 field.length > 3;
-//   }
 }
 
