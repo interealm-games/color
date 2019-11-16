@@ -2,7 +2,7 @@ package interealmGames.color.rgba.parser;
 
 import utest.Assert;
 import utest.Async;
-import interealmGames.color.rgba.parser.Hex3Parser;
+import interealmGames.color.rgba.parser.Hex6Parser;
 
 class Hex6ParserTest extends utest.Test {
 	var parser = new Hex6Parser();
