@@ -10,7 +10,7 @@ import StringTools;
 class RgbComposer implements Composer<Color> {
 	public function new () {}
 
-    /**
+	/**
 	 * Converts the color to a string
 	 * @param color The color to be composed
 	 * @return The formatted color

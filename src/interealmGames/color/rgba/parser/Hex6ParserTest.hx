@@ -8,9 +8,9 @@ class Hex6ParserTest extends utest.Test {
 	var parser = new Hex6Parser();
 
 	function testParse() {
-        var colorString = "#1F85DE";
+		var colorString = "#1F85DE";
 		var expected = new Color(31, 133, 222, 1);
-        var actual = this.parser.parse(colorString);
+		var actual = this.parser.parse(colorString);
 		Assert.equals(
 			expected.red,
 			actual.red

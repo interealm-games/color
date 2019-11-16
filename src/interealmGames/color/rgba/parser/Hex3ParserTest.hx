@@ -8,9 +8,9 @@ class Hex3ParserTest extends utest.Test {
 	var parser = new Hex3Parser();
 
 	function testParse() {
-        var colorString = "#28D";
+		var colorString = "#28D";
 		var expected = new Color(34, 136, 221, 1);
-        var actual = this.parser.parse(colorString);
+		var actual = this.parser.parse(colorString);
 		Assert.equals(
 			expected.red,
 			actual.red

@@ -7,8 +7,8 @@ import interealmGames.color.rgba.parser.RgbParser;
 class RgbParserTest extends utest.Test {
 	var parser = new RgbParser();
 
-    private function _test(colorString, expected) {
-        var actual = this.parser.parse(colorString);
+	private function _test(colorString, expected) {
+		var actual = this.parser.parse(colorString);
 		Assert.equals(
 			expected.red,
 			actual.red
@@ -25,14 +25,14 @@ class RgbParserTest extends utest.Test {
 			expected.alpha,
 			actual.alpha
 		);
-    }
+	}
 
 	function testParse() {
 		var expected = new Color(31, 133, 222, 1);
-        this._test("rgb(31,133,222)", expected);
-        this._test("rgb(31, 133,222)", expected);
-        this._test("rgb(31, 133, 222)", expected);
-        this._test("(31,133,222)", expected);
-        this._test("31, 133, 222", expected);
+		this._test("rgb(31,133,222)", expected);
+		this._test("rgb(31, 133,222)", expected);
+		this._test("rgb(31, 133, 222)", expected);
+		this._test("(31,133,222)", expected);
+		this._test("31, 133, 222", expected);
 	}
 }
