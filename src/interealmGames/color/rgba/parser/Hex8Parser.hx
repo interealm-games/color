@@ -11,6 +11,11 @@ class Hex8Parser implements Parser<Color> {
         this.isAlphaBefore = isAlphaBefore;
     }
 
+    /**
+     * Converts a 8 character Hex string into a RGBA Color
+     * @param colorString The hex string
+     * @return The converted Color
+     */
     public function parse(colorString:String):Color {
         colorString = colorString.replace('#', '');
         var offset = this.isAlphaBefore ? 2 : 0;

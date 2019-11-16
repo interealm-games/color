@@ -21,8 +21,10 @@ class HexComposer implements Composer<Color> {
 
 	/**
 	 * Checks if a six digit hex can be converted to three digit
+	 * @param hex The 6 character hex string to evaluate
+	 * @return Whether it can be collapse to 3 characters
 	 */
-	public function canBeCollapsed(hex:String) {
+	public function canBeCollapsed(hex:String):Bool {
 		var offset = hex.charAt(0) == '#' ? 1 : 0;
 		return hex.charAt(0 + offset) == hex.charAt(1 + offset)
 			&& hex.charAt(2 + offset) == hex.charAt(3 + offset)

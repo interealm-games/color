@@ -8,6 +8,11 @@ import interealmGames.color.rgba.Color;
 class Hex3Parser implements Parser<Color> {
     public function new() {}
 
+    /**
+     * Converts a 3 character Hex string into a RGBA Color
+     * @param colorString The hex string
+     * @return The converted Color
+     */
     public function parse(colorString:String):Color {
         colorString = colorString.replace('#', '');
         return new Color(

@@ -18,6 +18,10 @@ class Color extends ColorBase {
 		this.validate();
 	}
 
+    /**
+     * Validates whether the Color values are in the appropriate range
+     * @return Whether it is valid
+     */
 	public function validate(): Void {
 		if(!this.isValidValue(this.red)) {
 			throw new InvalidValueException('red', this.red);
@@ -36,10 +40,20 @@ class Color extends ColorBase {
 		}
 	}
 
+    /**
+     * Validates whether the alpha value is in the appropriate 0-1 range
+	 * @param value The value to check
+     * @return Whether it is valid
+     */
 	private function isValidAlpha(value:Float): Bool {
 		return value >=0 && value <= 1;
 	}
 
+    /**
+     * Validates whether the Color value is in the appropriate 255 range
+	 * @param value The value to check
+     * @return Whether it is valid
+     */
 	private function isValidValue(value:Int): Bool {
 		return value >=0 && value < 256;
 	}

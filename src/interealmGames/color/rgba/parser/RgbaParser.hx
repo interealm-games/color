@@ -8,6 +8,11 @@ import interealmGames.color.rgba.Color;
 class RgbaParser implements Parser<Color> {
     public function new() {}
 
+    /**
+     * Converts a rgba string into a RGBA Color
+     * @param colorString The hex string
+     * @return The converted Color
+     */
     public function parse(colorString:String):Color {
         colorString = 
             colorString
